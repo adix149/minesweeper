@@ -1,0 +1,161 @@
+:root {
+    --numRows: 10;
+    --numCols: 10;
+  }
+
+
+form {
+    display: grid;
+    grid-template-columns: 1fr ;
+    border-style: outset;
+    border-color: rgb(2, 129, 172);
+    margin-left: 10%;
+    /*width: 400px;*/
+    width: calc((var(--numCols)*35)*1px);
+}
+.gameTitle {
+    color: white;
+    background-color: rgb(0, 74, 170);
+    text-align: center;
+    font-size:3em;
+    border-bottom: 30px;
+    border-bottom-color: lightblue;
+    margin-bottom: 1px;
+}
+.dataWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom-style: solid;
+    border-color: rgb(2, 129, 172);
+    background-color: rgb(0, 74, 170);
+    color: white;
+    width: auto;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(var(--numCols),1fr);
+    grid-template-rows: repeat(var(--numRows),1fr);
+    grid-gap: 1px;
+  /*  width: (var(--numCols)*30)px;*/
+    max-height: auto;
+    margin-right: auto;
+/*    grid-auto-columns: auto;*/
+    
+  }
+.cell {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    overflow: auto;
+    text-align: center;
+    background-image: url("imgs/butt1.jpg");
+}
+.cell_flagged_1 {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    overflow: auto;
+    text-align: center;
+    background-image: url("imgs/flag2.png");
+}
+.cell_flagged_2 {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    overflow: auto;
+    text-align: center;
+    background-image: url("imgs/ques.png");
+}
+.cell_mine {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    overflow: auto;
+    text-align: center;
+    background-image: url("imgs/mine_before2.png"); 
+}
+.cell_clicked_0 {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    overflow: auto;
+    text-align: center;
+    background-image: url("imgs/0.jpg"); 
+}
+.cell_clicked_1 {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    overflow: auto;
+    text-align: center;
+    background-image: url("imgs/1.jpg"); 
+}
+.cell_clicked_2 {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    overflow: auto;
+    text-align: center;
+    background-image: url("imgs/2.jpg"); 
+}
+.cell_clicked_3 {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    overflow: auto;
+    text-align: center;
+    background-image: url("imgs/3.jpg"); 
+}
+.cell_clicked_4 {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    overflow: auto;
+    text-align: center;
+    background-image: url("imgs/4.jpg"); 
+}
+.cell_clicked_5 {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    overflow: auto;
+    text-align: center;
+    background-image: url("imgs/5.jpg"); 
+}
+.cell_clicked_6 {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    overflow: auto;
+    text-align: center;
+    background-image: url("imgs/6.jpg"); 
+}
+.cell_clicked_7 {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    overflow: auto;
+    text-align: center;
+    background-image: url("imgs/7.jpg"); 
+}
+.cell_clicked_8 {
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    overflow: auto;
+    text-align: center;
+    background-image: url("imgs/8.jpg"); 
+}

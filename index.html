@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>AdMinesweeper</title>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <script src="scripts.js"></script>
+  </head>
+  <body onload="DoDivBox(16,30,99)">
+  <input type="radio" name="lvlSel" value="Beginner" onkeydown="levelSelection(this,event)" onclick="levelSelection(this, event)" />Beginner</input> <br/>
+  <input type="radio" name="lvlSel" value="Intermediate" onkeydown="levelSelection(this,event)" onclick="levelSelection(this, event)" />Intermediate</input><br/>
+  <input type="radio" name="lvlSel" value="Expertl" onkeydown="levelSelection(this,event)" onclick="levelSelection(this, event)" />Expert</input><br/>
+
+
+  <form id ="MinesSweeper" >
+
+    <div id="GameTitle" class="gameTitle"> 
+      <div id='name' class="gName">   
+      Minesweeper
+      </div>
+    </div>
+    <div id="Data" class="dataWrapper"> 
+    <div> Mines: <output id = "mRemaining"></output> </div>
+    <div> Time: <output id = "mTime"></output> </div>
+    </div>
+    <div id="MineTable" class="wrapper"> </div>
+  </form>
+   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  </body>
+</html>
